@@ -17,9 +17,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "IV SOARErs — IVY Inc.",
+  metadataBase: new URL("https://ivyincsoarers.com"),
+  title: "IV SOARers — IVY Inc.",
   description:
     "A global community of leaders, entrepreneurs, and visionaries — assembled to soar.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    url: "https://ivyincsoarers.com",
+    siteName: "IV SOARErs",
+    title: "IV SOARers — IVY Inc.",
+    description:
+      "A global community of leaders, entrepreneurs, and visionaries — assembled to soar.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
